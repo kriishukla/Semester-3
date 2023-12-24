@@ -1,0 +1,7 @@
+40 70 xor
+50 100 product
+10 20 compare
+
+
+
+

@@ -1,0 +1,13 @@
+n = -1000:1000; 
+y = cos(n / 6);
+a=1;
+Y = fft(y);
+amplitude_spectrum = abs(Y);
+a=1;
+[~, index] = max(amplitude_spectrum);
+T = 1;
+a=1;
+signal_length = length(y);
+fundamental_frequency = (index - 1) / (T * signal_length);
+a=1;
+disp(['Fundamental Frequency: ', num2str(fundamental_frequency), ' cycles/sample']);
